@@ -1,0 +1,33 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.application-logo {
+  width: 400px;
+  height: auto;
+}
+
+.logo-section {
+  width: 70%;
+}
+
+.table {
+  width: 75%;
+  margin: auto;
+}
+
+#uc-logo {
+  float: left;
+}
+
+#commonapp-logo {
+  float: right;
+}
+
+td {
+  width: 50%;
+}
+
+body {
+  padding-bottom: 50px;
+}
