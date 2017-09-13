@@ -1,0 +1,32 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.logo-section {
+  width: 70%;
+}
+
+img {
+	width: 100%;
+	height:420px;
+}
+.table {
+  width: 75%;
+  margin: auto;
+}
+
+td {
+  width: 50%;
+}
+
+th {
+	align: "center";
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+body {
+  padding-bottom: 50px;
+}
