@@ -12,8 +12,10 @@
 }
 
 .table {
-  width: 75%;
-  margin: auto;
+  width: 80%;
+  margin-left: 14%;
+  margin-right: 15%;
+  margin-bottom: 30px;
 }
 
 #uc-logo {
@@ -24,8 +26,12 @@
   float: right;
 }
 
-td {
-  width: 50%;
+.table-hide {
+  width: 100%;
+}
+
+td, th {
+  width: 45%;
 }
 
 body {
