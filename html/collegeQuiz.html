@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<!--bootstrap-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<!--jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../js/displayQuestions.js"></script>
+		<title>College Quiz</title>
+	</head>
+	<body class="bg-info">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">College Guide</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavBar">
+					<ul class="nav navbar-nav">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="">High School</a></li>
+					<li><a href="applications.html">Application Process</a></li>
+					<li class="active"><a href="collegeQuiz.html">College Type</a></li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+		<style type="text/css">
+			table {
+				margin: 0 auto;
+				width: 80%;
+			}
+			#q2,#q3,#q4,#q5{
+				display:none;
+			}
+			h1{
+				font-family:Impact;
+			}
+		</style>
+		<h1 class="well text-center"><u>College Quiz</u></h1>
+		<div>
+			<table class="text-center">
+				<tr id="q1">
+					<td>
+						<p>What campus size are you interested in?</p>
+						<button type="button" class="btn" id="small">0-5,000 students</button>
+						<button type="button" class="btn" id="medium">10,000-20,000 students</button>
+						<button type="button" class="btn" id="large">20,000-30,000 students</button>
+					</td>
+				</tr>
+				<tr id="q2">
+					<td>
+						<br>
+						<p>College Type:</p>
+						<button type="button" class="btn" id="uc">University College(UC)</button>
+						<button type="button" class="btn" id="cc">Community College</button>
+						<button type="button" class="btn" id="pc">Private University</button>
+					</td>
+				</tr>
+				<tr id="q3">
+					<td>
+						<br>
+						<p>Religious affiliated?</p>
+						<button type="button" class="btn" id="are">Yes</button>
+						<button type="button" class="btn" id="not">No</button>
+					</td>
+				</tr>
+				<tr id="q4">
+					<td>
+						<br>
+						<p>Which do you associate with best:</p>
+						<button type="button" class="btn" id="Christian">Christianity</button>
+						<button type="button" class="btn" id="Islam">Islam</button>
+						<button type="button" class="btn" id="Atheist">Atheist</button>
+						<button type="button" class="btn" id="NotListed">Other</button>
+					</td>
+				</tr>
+				<tr id="q5">
+					<td>
+						<br>
+						<p>College Type:</p>
+						<p id="type"></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
