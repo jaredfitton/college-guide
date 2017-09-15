@@ -13,8 +13,7 @@
 
 .table {
   width: 80%;
-  margin-left: 14%;
-  margin-right: 15%;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -27,7 +26,12 @@
 }
 
 .table-hide {
-  width: 100%;
+  margin-top: 5px;
+  float: right;
+}
+
+h4 {
+  float: left;
 }
 
 td, th {
