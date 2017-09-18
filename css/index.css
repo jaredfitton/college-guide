@@ -1,5 +1,5 @@
 .navbar {
-  margin-bottom: 0;
+  margin-bottom:;
 }
 
 .logo-section {
@@ -12,8 +12,13 @@ img {
 }
 .table {
   width: 75%;
+  border: 15px;
   margin: auto;
+  background-color: white;
+  border-color: white;
 }
+
+
 
 td {
   width: 50%;
@@ -25,5 +30,6 @@ th {
 
 body {
   padding-bottom: 30px;
+ 
 }
 
