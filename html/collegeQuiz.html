@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../css/webStyle.css">
 		<!--jquery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="../js/displayQuestions.js"></script>
 		<title>College Quiz</title>
 	</head>
-	<body class="bg-info">
+	<body>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -23,35 +23,27 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavBar">
 					<ul class="nav navbar-nav">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="">High School</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="before.html">High School</a></li>
 					<li><a href="applications.html">Application Process</a></li>
 					<li class="active"><a href="collegeQuiz.html">College Type</a></li>
 				</ul>
 				</div>
 			</div>
 		</nav>
-		<style type="text/css">
-			table {
-				margin: 0 auto;
-				width: 80%;
-			}
-			#q2,#q3,#q4,#q5{
-				display:none;
-			}
-			h1{
-				font-family:Impact;
-			}
-		</style>
+		<!--questions and answers-->
 		<h1 class="well text-center"><u>College Quiz</u></h1>
 		<div>
-			<table class="text-center">
+			<table id="questions">
 				<tr id="q1">
 					<td>
+						<br>
 						<p>What campus size are you interested in?</p>
 						<button type="button" class="btn" id="small">0-5,000 students</button>
 						<button type="button" class="btn" id="medium">10,000-20,000 students</button>
 						<button type="button" class="btn" id="large">20,000-30,000 students</button>
+						<br>
+						<br>
 					</td>
 				</tr>
 				<tr id="q2">
@@ -61,6 +53,8 @@
 						<button type="button" class="btn" id="uc">University College(UC)</button>
 						<button type="button" class="btn" id="cc">Community College</button>
 						<button type="button" class="btn" id="pc">Private University</button>
+						<br>
+						<br>
 					</td>
 				</tr>
 				<tr id="q3">
@@ -69,6 +63,8 @@
 						<p>Religious affiliated?</p>
 						<button type="button" class="btn" id="are">Yes</button>
 						<button type="button" class="btn" id="not">No</button>
+						<br>
+						<br>
 					</td>
 				</tr>
 				<tr id="q4">
@@ -76,9 +72,10 @@
 						<br>
 						<p>Which do you associate with best:</p>
 						<button type="button" class="btn" id="Christian">Christianity</button>
-						<button type="button" class="btn" id="Islam">Islam</button>
 						<button type="button" class="btn" id="Atheist">Atheist</button>
 						<button type="button" class="btn" id="NotListed">Other</button>
+						<br>
+						<br>
 					</td>
 				</tr>
 				<tr id="q5">
@@ -86,6 +83,86 @@
 						<br>
 						<p>College Type:</p>
 						<p id="type"></p>
+					</td>
+				</tr>
+			</table>
+			<!--recommended school tables-->
+			<br>
+			<button type="button" class="btn" id="rev">Show Schools</button>
+			<br>
+			<br>
+			<!--rec1-->
+			<table id="rec">
+				<tr>
+					<td>
+						<br>
+						<figure>
+							<img src="../images/SU.png" alt="PrivateC" class="images">
+							<figcaption>
+								<p>Spring Arbor University is a private university in Arbor, Michigan.</p>
+								<p>Houses 4,000 students.</p>
+							</figcaption>
+						</figure>
+					</td>
+					<td>
+						<br>
+						<figure>
+							<img src="../images/SAU.png" alt="PrivateC" class="images">
+							<figcaption>
+								<p>Stanford University is a medium sized private univeristy.</p>
+								<p>Houses 16,336 students.</p>
+							</figcaption>
+						</figure>
+					</td>
+				</tr>
+			</table>
+			<!--rec2-->
+			<table id="rec2">
+				<tr>
+					<td>
+						<br>
+						<figure>
+							<img src="" alt="CC">
+							<figcaption>
+								<p>Santa Barbara City College is a medium sized community college.</p>
+								<p>Houses 17,608 students.</p>
+							</figcaption>
+						</figure>
+					</td>
+					<td>
+						<br>
+						<figure>
+							<img src="" alt="CC">
+							<figcaption>
+								<p>Pacific Union College is a small community college that is Christian.</p>
+								<p>Houses 1,500 students.</p>
+							</figcaption>
+						</figure>
+					</td>
+				</tr>
+			</table>
+			<!--rec3-->
+			<table id="rec3">
+				<tr>
+					<td>
+						<br>
+						<figure>
+							<img src="" alt="UC">
+							<figcaption>
+								<p>UCSB is a large University in california.</p>
+								<p>Houses 24,346 students.</p>
+							</figcaption>
+						</figure>
+					</td>
+					<td>
+						<br>
+						<figure>
+							<img src="" alt="UC">
+							<figcaption>
+								<p>UC Berkley is an even larger university in california.</p>
+								<p>Houses over 40,000 students.</p>
+							</figcaption>
+						</figure>
 					</td>
 				</tr>
 			</table>

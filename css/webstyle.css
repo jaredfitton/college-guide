@@ -1,7 +1,43 @@
 body{
-	background-color:powderblue;
 }
 
-#q1,#q2,#q3,#q4,#q5,#q6,#q7{
+table {
+	border-radius:50px;
+	background-color:gray;
+	text-align:center;
+}
+
+#questions{
+	margin: 0 auto;
+	width: 80%;
+}
+
+#rec,#rec2,#rec3{
+	margin: 0 auto;
+	width: 60%;
+}
+
+#rev{
 	display:none;
+}
+
+#q2,#q3,#q4,#q5,#rec,#rec2,#rec3{
+	display:none;
+}
+
+.images{
+	width:400;
+	height:400;
+}
+	
+h1{
+	font-family:Impact;
+}
+
+p{
+	font-weight:bold;
+}
+
+div{
+	text-align:center;
 }
