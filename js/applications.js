@@ -5,13 +5,11 @@ $(document).ready(function() {
     var selectedTable = $(this).attr("data-table-for");
     $("#" + selectedTable).find("tbody").toggle();
 
-    var toggleButton;
     if ($("#" + selectedTable).find("tbody").is(":visible")) {
-      toggleButton = "Hide"
+      $(this).find("#toggle-div").html("<span id='description-table-hide' class='glyphicon glyphicon-minus-sign'></span> Hide");
     } else {
-      toggleButton = "Show"
+      $(this).find("#toggle-div").html("<span id='description-table-hide' class='glyphicon glyphicon-plus-sign'></span> Show");
     }
-    $(this).html(toggleButton);
   });
 
 });
