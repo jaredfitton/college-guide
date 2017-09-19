@@ -88,6 +88,7 @@ $(document).ready(function(){
 		$("#rev").fadeIn("fast");
 	})
 
+	//function that determines what school will be shown based on compilled string.
 	$("#rev").click(function(){
 		if(str.indexOf("private")>-1){
 			$("#rec").fadeIn("fast");
