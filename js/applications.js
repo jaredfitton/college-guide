@@ -6,9 +6,9 @@ $(document).ready(function() {
     $("#" + selectedTable).find("tbody").toggle();
 
     if ($("#" + selectedTable).find("tbody").is(":visible")) {
-      $(this).find("#toggle-div").html("<span id='description-table-hide' class='glyphicon glyphicon-minus-sign'></span> Hide");
+      $(this).html("<span id='description-table-hide' class='glyphicon glyphicon-minus-sign'></span> Hide");
     } else {
-      $(this).find("#toggle-div").html("<span id='description-table-hide' class='glyphicon glyphicon-plus-sign'></span> Show");
+      $(this).html("<span id='description-table-hide' class='glyphicon glyphicon-plus-sign'></span> Show");
     }
   });
 
