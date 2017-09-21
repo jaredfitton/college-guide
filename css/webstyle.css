@@ -1,9 +1,8 @@
 body{
+	background-color:#fcfdff;
 }
 
 table {
-	border-radius:50px;
-	background-color:gray;
 	text-align:center;
 }
 
@@ -23,6 +22,11 @@ table {
 
 #q2,#q3,#q4,#q5,#rec,#rec2,#rec3{
 	display:none;
+}
+
+.well{
+	border-radius:50px;
+	border:0px;
 }
 
 img{
