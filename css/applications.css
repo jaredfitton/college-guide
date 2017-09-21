@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 #uc-logo {
   float: left;
 }
