@@ -17,6 +17,18 @@
   margin-bottom: 30px;
 }
 
+.button-th {
+  width: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
 #uc-logo {
   float: left;
 }
@@ -25,10 +37,8 @@
   float: right;
 }
 
-
-
 td, th {
-  width: 45%;
+  width: 40%;
 }
 
 body {
