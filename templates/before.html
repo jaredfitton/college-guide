@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% set active_page ="before" %}
 {% block title %}Home{% endblock %}
-{% block js %}before.js{% endblock %}
-{% block css %}before.css{% endblock %}
+{% block jscss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/before.css')}}">
+    <script src="{{url_for('static',filename='javascript/before.js')}}"></script>
+{% endblock %}
 
 {% block content %}
 	<h1> What to do before college! </h1>
