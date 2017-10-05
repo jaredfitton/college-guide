@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="../js/befscript.js"></script>
-	<link rel="stylesheet" href="../css/befcs.css">
-	<title>College Guide</title>
-  </head>
- 
-  <body>
-	  <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">College Guide</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavBar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="applications.html">Application Process</a></li>
-            <li class="active"><a href="before.html">What to do in High School</a></li>
-			<li><a href="collegeQuiz.html">College Type Quiz</a></li>
-			<!-- from here we can add differnt pages -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-	
+{% extends "layout.html" %}
+{% set active_page ="before" %}
+{% block title %}Home{% endblock %}
+{% block js %}before.js{% endblock %}
+{% block css %}before.css{% endblock %}
+
+{% block content %}
 	<h1> What to do before college! </h1>
 	
 	<table class="table description-table table-bordered">
@@ -43,7 +14,7 @@
 		 <h3> There are a variety of things you have to do to be competitive in college! To learn more about what you can do, click on the box with the title you are interested in!</h3>
 		</td>
 		<td>
-		 <img src="../Images/edus6.png" alt="Eduimagething">
+		 <img src="{{url_for('static',filename='Images/edus6.png')}}" alt="Eduimagething">
 		</td>
 	  </tr>
       </thead>
@@ -58,7 +29,7 @@
 			</ul>
           </td>
 		  <td id="1" class="dst">
-			<img id="eduimg-1" src="../Images/edus1.png" alt="Eduimagething">
+			<img id="eduimg-1" src="{{url_for('static',filename='/Images/edus1.png)}}" alt="Eduimagething">
 		  </td>
         </tr>
 		<tr>
@@ -72,7 +43,7 @@
 			</ul>
           </td>
 		  <td id="2" class="dst">
-			<img id="eduimg0" src="../Images/edus2.png" alt="Eduimagething">
+			<img id="eduimg0" src="{{url_for('static',filename='/Images/edus2.png)}}" alt="Eduimagething">
 		  </td>
         </tr>
 		<tr>
@@ -86,7 +57,7 @@
 			</ul>
           </td>
 		  <td id="3" class="dst">
-			<img id="eduimg1" src="../Images/edus3.png" alt="Eduimagething">
+			<img id="eduimg1" src="{{url_for('static',filename='/Images/edus3.png)}}" alt="Eduimagething">
 		  </td>
         </tr>
 		<tr>
@@ -100,7 +71,7 @@
 			</ul>
           </td>
 		  <td id="4" class="dst">
-			<img id="eduimg2" src="../Images/edus4.png" alt="Eduimagething">
+			<img id="eduimg2" src="{{url_for('static',filename='/Images/edus4.png)}}" alt="Eduimagething">
 		  </td>
         </tr>
 		<tr>
@@ -113,9 +84,9 @@
 			</ul>
           </td>
 		  <td id="5" class="dst">
-			<img id="eduimg3" src="../Images/edus5.png" alt="Eduimagething">
+			<img id="eduimg3" src="{{url_for('static',filename='/Images/edus5.png)}}" alt="Eduimagething">
 		  </td>
         </tr>
       </tbody>
     </table>
-  </body>
+ {% endblock %}
