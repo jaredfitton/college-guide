@@ -15,7 +15,7 @@ def render_page2():
     return render_template('collegeQuiz.html')
     
 @app.route("/app")
-def render_page2():
+def render_page3():
     return render_template('applications.html')
     
 if __name__=="__main__":
