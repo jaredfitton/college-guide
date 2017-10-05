@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% set active_page ="quiz" %}
 {% block title %}College Quiz{% endblock %}
-{% block js %}collegequiz.js{% endblock %}
-{% block css %}collegequiz.css{% endblock %}
+{% block jscss %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/collegequiz.css')}}">
+    <script src="{{url_for('static',filename='javascript/collegequiz.js')}}"></script>
+{% endblock %}
 
 {% block content %}
 		<!--questions and answers-->
