@@ -1,43 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
+{% set active_page ="quiz" %}
+{% block title %}College Quiz{% endblock %}
+{% block js %}collegequiz.js{% endblock %}
+{% block css %}collegequiz.css{% endblock %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/applications.css">
-  <script src="../js/applications.js"></script>
-  <title>Application Process</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">College Guide</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavBar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="applications.html">Application Process</a></li>
-		  <li><a href="before.html">What to do in High School</a></li>
-          <li><a href="collegeQuiz.html">College Type Quiz</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+{% block content %}
 
   <div class="jumbotron jumbotron-fluid">
     <div class="logo-section container">
-      <img id="uc-logo" class="application-logo" src="../Images/UC_Logo.png" alt="University of California">
-      <img id="commonapp-logo" class="application-logo" src="../Images/CommonApp_Logo.png" alt="Common App">
+      <img id="uc-logo" class="application-logo" src="{{url_for('static',filename='Images/UC_Logo.png')}}" alt="University of California">
+      <img id="commonapp-logo" class="application-logo" src="{{url_for('static',filename='Images/CommonApp_Logo.png')}}" alt="Common App">
     </div>
   </div>
 
@@ -213,4 +185,4 @@
   </table>
 
 </body>
-</html>
+{% endblock %}
